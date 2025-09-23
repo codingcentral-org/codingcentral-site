@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { supabase, type Profile } from '@/lib/supabase';
 import { useRouter } from 'next/navigation';
@@ -112,14 +111,18 @@ export default function DashboardPage() {
                         <span>Web Development Fundamentals</span>
                         <span>75%</span>
                       </div>
-                      <Progress value={75} className="h-2" />
+                      <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                        <div className="h-full bg-blue-600 rounded-full" style={{ width: '75%' }}></div>
+                      </div>
                     </div>
                     <div>
                       <div className="flex justify-between text-sm mb-1">
                         <span>Python Programming</span>
                         <span>45%</span>
                       </div>
-                      <Progress value={45} className="h-2" />
+                      <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                        <div className="h-full bg-green-600 rounded-full" style={{ width: '45%' }}></div>
+                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -320,7 +323,9 @@ export default function DashboardPage() {
                           <h5 className="font-medium">Web Development Fundamentals</h5>
                           <Badge>In Progress</Badge>
                         </div>
-                        <Progress value={75} className="mb-2" />
+                        <div className="mb-2 h-2 bg-gray-200 rounded-full overflow-hidden">
+                          <div className="h-full bg-blue-600 rounded-full" style={{ width: '75%' }}></div>
+                        </div>
                         <p className="text-sm text-muted-foreground">6 of 8 modules completed</p>
                       </div>
                       <div className="border rounded-lg p-4">
@@ -328,7 +333,9 @@ export default function DashboardPage() {
                           <h5 className="font-medium">Python Programming</h5>
                           <Badge variant="secondary">In Progress</Badge>
                         </div>
-                        <Progress value={45} className="mb-2" />
+                        <div className="mb-2 h-2 bg-gray-200 rounded-full overflow-hidden">
+                          <div className="h-full bg-green-600 rounded-full" style={{ width: '45%' }}></div>
+                        </div>
                         <p className="text-sm text-muted-foreground">4.5 of 10 modules completed</p>
                       </div>
                     </div>
@@ -358,11 +365,7 @@ function ApprovalManagement({ userRole }: { userRole: string }) {
       // Fetch pending event registrations
       const { data: events } = await supabase
         .from('event_registrations')
-        .select(`
-          *,
-          events(title, date),
-          profiles(full_name, email)
-        `)
+        .select('*, events(title, date), profiles(full_name, email)')
         .eq('status', 'pending');
 
       // Fetch pending volunteer applications
