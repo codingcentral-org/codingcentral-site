@@ -25,7 +25,7 @@ export default function VolunteerPage() {
     availability: '',
     motivation: '',
     experience: '',
-    interests: []
+    interests: [] as string[]
   });
 
   useEffect(() => {
