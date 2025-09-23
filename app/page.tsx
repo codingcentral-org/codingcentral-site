@@ -133,128 +133,103 @@ export default function Home() {
 
             {/* Right Content - Dashboard Preview */}
             <div className="relative">
-              {/* Coding Illustration */}
+              {/* Dashboard Preview Mockup */}
               <div className="relative w-full max-w-lg mx-auto">
-                <div className="bg-gradient-to-br from-blue-100 to-indigo-200 rounded-2xl p-8 shadow-2xl">
-                  {/* Code Editor Mockup */}
-                  {/* 3D Glassmorphism Code Terminal */}
-                  <div className="relative group perspective-1000">
-                    <div className="relative bg-gray-900/95 backdrop-blur-xl rounded-3xl p-6 mb-6 border border-gray-700/50 shadow-2xl transform-gpu transition-all duration-700 hover:rotateX-2 hover:rotateY-2 hover:scale-105">
-                      {/* Glassmorphism overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-gray-800/20 via-gray-900/10 to-black/20 rounded-3xl"></div>
-                      
-                      {/* Inner glow effect */}
-                      <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-500/10 via-transparent to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                      
-                      {/* Terminal header */}
-                      <div className="relative flex items-center justify-between mb-4">
-                        <div className="flex items-center space-x-2">
-                          <div className="w-4 h-4 bg-red-500 rounded-full shadow-lg"></div>
-                          <div className="w-4 h-4 bg-yellow-500 rounded-full shadow-lg"></div>
-                          <div className="w-4 h-4 bg-green-500 rounded-full shadow-lg"></div>
+                <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-gray-200/50 overflow-hidden">
+                  {/* Dashboard Header */}
+                  <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center space-x-4">
+                        <div className="flex space-x-1">
+                          <div className="w-3 h-3 bg-red-400 rounded-full"></div>
+                          <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                          <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                         </div>
-                        <div className="text-gray-300 text-xs font-mono bg-gray-800/80 px-3 py-1 rounded-full border border-gray-600">
-                          terminal.js
+                        <div className="flex space-x-6">
+                          <div className="text-white font-medium text-sm bg-white/20 px-3 py-1 rounded-lg">Dashboard</div>
+                          <div className="text-white/70 text-sm hover:text-white cursor-pointer">Courses</div>
+                          <div className="text-white/70 text-sm hover:text-white cursor-pointer">Progress</div>
                         </div>
                       </div>
-                      
-                      {/* 3D Code Block */}
-                      <div className="relative font-mono text-sm leading-relaxed">
-                        <div className="relative bg-gray-800/80 rounded-2xl p-4 border border-gray-600/50">
-                          <div className="space-y-2">
-                            <div className="text-blue-400">
-                              <span className="text-purple-400 font-semibold">function</span>{' '}
-                              <span className="text-yellow-300 font-semibold">learnCoding</span>
-                              <span className="text-white">()</span>{' '}
-                              <span className="text-cyan-400 font-semibold">{'{'}</span>
-                            </div>
-                            <div className="text-gray-200 ml-6">
-                              <span className="text-blue-400 font-semibold">console</span>
-                              <span className="text-white">.</span>
-                              <span className="text-yellow-400 font-semibold">log</span>
-                              <span className="text-white">(</span>
-                              <span className="text-green-400 font-medium">&quot;Welcome to Coding Central!&quot;</span>
-                              <span className="text-white">);</span>
-                            </div>
-                            <div className="text-gray-200 ml-6">
-                              <span className="text-purple-400 font-semibold">return</span>{' '}
-                              <span className="text-orange-400 font-semibold">success</span>
-                              <span className="text-white">;</span>
-                            </div>
-                            <div className="text-cyan-400 font-semibold">{'}'}</div>
-                          </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-8 h-8 bg-blue-300 rounded-full flex items-center justify-center">
+                          <span className="text-blue-800 text-xs font-bold">AC</span>
                         </div>
+                        <span className="text-white text-sm font-medium">Alex Chen</span>
                       </div>
                     </div>
                   </div>
                   
-                  {/* 3D Glassmorphism Progress Section */}
-                  <div className="space-y-6">
-                    {/* JavaScript Progress */}
-                    <div className="relative group">
-                      <div className="bg-white/90 backdrop-blur-xl rounded-2xl p-5 border border-gray-200 shadow-xl transform-gpu transition-all duration-500 hover:scale-105 hover:bg-white/95">
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-blue-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        
-                        <div className="relative flex items-center justify-between mb-3">
-                          <span className="text-gray-800 font-semibold">JavaScript Fundamentals</span>
-                          <span className="text-blue-600 font-bold text-lg">85%</span>
+                  {/* Dashboard Content */}
+                  <div className="p-6 space-y-6">
+                    {/* Progress Cards */}
+                    <div className="space-y-4">
+                      {/* AI Fundamentals Card */}
+                      <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-2xl p-4 border border-purple-100 hover:shadow-lg transition-all duration-300">
+                        <div className="flex items-center space-x-4">
+                          <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center text-2xl">
+                            🤖
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-semibold text-gray-800 mb-2">AI Fundamentals</h4>
+                            <div className="relative">
+                              <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div 
+                                  className="h-full bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full transition-all duration-1000 ease-out"
+                                  style={{width: '75%'}}
+                                ></div>
+                              </div>
+                              <span className="text-sm text-purple-600 font-medium mt-1 block">75% Complete</span>
+                            </div>
+                          </div>
                         </div>
-                        
-                        <div className="relative">
-                          <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                            <div 
-                              className="h-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 rounded-full relative overflow-hidden shadow-sm transform-gpu transition-all duration-1000 ease-out"
-                              style={{width: '85%'}}
-                            >
-                              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
+                      </div>
+
+                      {/* Cybersecurity Card */}
+                      <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-4 border border-green-100 hover:shadow-lg transition-all duration-300">
+                        <div className="flex items-center space-x-4">
+                          <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center text-2xl">
+                            🛡️
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-semibold text-gray-800 mb-2">Cybersecurity</h4>
+                            <div className="relative">
+                              <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div 
+                                  className="h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full transition-all duration-1000 ease-out"
+                                  style={{width: '40%'}}
+                                ></div>
+                              </div>
+                              <span className="text-sm text-green-600 font-medium mt-1 block">40% Complete</span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Python Progress */}
-                    <div className="relative group">
-                      <div className="bg-white/90 backdrop-blur-xl rounded-2xl p-5 border border-gray-200 shadow-xl transform-gpu transition-all duration-500 hover:scale-105 hover:bg-white/95">
-                        <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 via-transparent to-green-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        
-                        <div className="relative flex items-center justify-between mb-3">
-                          <span className="text-gray-800 font-semibold">Python Basics</span>
-                          <span className="text-green-600 font-bold text-lg">92%</span>
+                    {/* Live Stats */}
+                    <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-4 border border-blue-100">
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-blue-600 mb-1">12</div>
+                          <div className="text-sm text-gray-600">Courses Completed</div>
                         </div>
-                        
-                        <div className="relative">
-                          <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                            <div 
-                              className="h-full bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 rounded-full relative overflow-hidden shadow-sm transform-gpu transition-all duration-1000 ease-out"
-                              style={{width: '92%'}}
-                            >
-                              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
-                            </div>
-                          </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-cyan-600 mb-1">120h</div>
+                          <div className="text-sm text-gray-600">Learning Time</div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Web Development Progress */}
-                    <div className="relative group">
-                      <div className="bg-white/90 backdrop-blur-xl rounded-2xl p-5 border border-gray-200 shadow-xl transform-gpu transition-all duration-500 hover:scale-105 hover:bg-white/95">
-                        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-purple-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        
-                        <div className="relative flex items-center justify-between mb-3">
-                          <span className="text-gray-800 font-semibold">Web Development</span>
-                          <span className="text-purple-600 font-bold text-lg">67%</span>
+                    {/* Achievement Badge */}
+                    <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-4 border border-yellow-100">
+                      <div className="flex items-center space-x-3">
+                        <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center">
+                          🏆
                         </div>
-                        
-                        <div className="relative">
-                          <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
-                            <div 
-                              className="h-full bg-gradient-to-r from-purple-500 via-purple-600 to-violet-600 rounded-full relative overflow-hidden shadow-sm transform-gpu transition-all duration-1000 ease-out"
-                              style={{width: '67%'}}
-                            >
-                              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
-                            </div>
-                          </div>
+                        <div>
+                          <div className="font-semibold text-gray-800">Top Performer</div>
+                          <div className="text-sm text-gray-600">Earned this week</div>
                         </div>
                       </div>
                     </div>
