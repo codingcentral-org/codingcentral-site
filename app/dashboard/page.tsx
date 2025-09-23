@@ -522,7 +522,7 @@ function ApprovalManagement({ userRole }: { userRole: string }) {
                       <div className="flex space-x-2">
                         <Button
                           size="sm"
-                          onClick={() => handleApproval('tutoring_requests', request.id, 'assigned')}
+                          onClick={() => handleApproval('tutoring_requests', request.id, 'approved')}
                           className="bg-green-600 hover:bg-green-700"
                         >
                           Assign
@@ -530,7 +530,7 @@ function ApprovalManagement({ userRole }: { userRole: string }) {
                         <Button
                           size="sm"
                           variant="destructive"
-                          onClick={() => handleApproval('tutoring_requests', request.id, 'cancelled')}
+                          onClick={() => handleApproval('tutoring_requests', request.id, 'rejected')}
                         >
                           Reject
                         </Button>
