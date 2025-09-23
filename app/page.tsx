@@ -133,115 +133,53 @@ export default function Home() {
 
             {/* Right Content - Dashboard Preview */}
             <div className="relative">
-              {/* Dashboard Preview Mockup */}
-              <div className="relative w-full max-w-lg mx-auto">
-                <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-gray-200/50 overflow-hidden">
-                  {/* Dashboard Header */}
-                  <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-4">
-                        <div className="flex space-x-1">
-                          <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                          <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                          <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                        </div>
-                        <div className="flex space-x-6">
-                          <div className="text-white font-medium text-sm bg-white/20 px-3 py-1 rounded-lg">Dashboard</div>
-                          <div className="text-white/70 text-sm hover:text-white cursor-pointer">Courses</div>
-                          <div className="text-white/70 text-sm hover:text-white cursor-pointer">Progress</div>
+              <div className="hero-visual">
+                <div className="dashboard-preview">
+                  <div className="preview-header">
+                    <div className="preview-tabs">
+                      <div className="tab active">Dashboard</div>
+                      <div className="tab">Courses</div>
+                      <div className="tab">Progress</div>
+                    </div>
+                    <div className="preview-user">
+                      <div className="user-avatar"></div>
+                      <span>Alex Chen</span>
+                    </div>
+                  </div>
+                  <div className="preview-content">
+                    <div className="progress-cards">
+                      <div className="progress-card ai">
+                        <div className="card-icon">🤖</div>
+                        <div className="card-info">
+                          <h4>AI Fundamentals</h4>
+                          <div className="progress-bar">
+                            <div className="progress" style={{width: '75%'}}></div>
+                          </div>
+                          <span>75% Complete</span>
                         </div>
                       </div>
-                      <div className="flex items-center space-x-2">
-                        <div className="w-8 h-8 bg-blue-300 rounded-full flex items-center justify-center">
-                          <span className="text-blue-800 text-xs font-bold">AC</span>
+                      <div className="progress-card cyber">
+                        <div className="card-icon">🛡️</div>
+                        <div className="card-info">
+                          <h4>Cybersecurity</h4>
+                          <div className="progress-bar">
+                            <div className="progress" style={{width: '40%'}}></div>
+                          </div>
+                          <span>40% Complete</span>
                         </div>
-                        <span className="text-white text-sm font-medium">Alex Chen</span>
+                      </div>
+                    </div>
+                    <div className="live-stats">
+                      <div className="stat-item">
+                        <div className="stat-value">12</div>
+                        <div className="stat-label">Courses Completed</div>
+                      </div>
+                      <div className="stat-item">
+                        <div className="stat-value">120h</div>
+                        <div className="stat-label">Learning Time</div>
                       </div>
                     </div>
                   </div>
-                  
-                  {/* Dashboard Content */}
-                  <div className="p-6 space-y-6">
-                    {/* Progress Cards */}
-                    <div className="space-y-4">
-                      {/* AI Fundamentals Card */}
-                      <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-2xl p-4 border border-purple-100 hover:shadow-lg transition-all duration-300">
-                        <div className="flex items-center space-x-4">
-                          <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center text-2xl">
-                            🤖
-                          </div>
-                          <div className="flex-1">
-                            <h4 className="font-semibold text-gray-800 mb-2">AI Fundamentals</h4>
-                            <div className="relative">
-                              <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                                <div 
-                                  className="h-full bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full transition-all duration-1000 ease-out"
-                                  style={{width: '75%'}}
-                                ></div>
-                              </div>
-                              <span className="text-sm text-purple-600 font-medium mt-1 block">75% Complete</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Cybersecurity Card */}
-                      <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-4 border border-green-100 hover:shadow-lg transition-all duration-300">
-                        <div className="flex items-center space-x-4">
-                          <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center text-2xl">
-                            🛡️
-                          </div>
-                          <div className="flex-1">
-                            <h4 className="font-semibold text-gray-800 mb-2">Cybersecurity</h4>
-                            <div className="relative">
-                              <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                                <div 
-                                  className="h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full transition-all duration-1000 ease-out"
-                                  style={{width: '40%'}}
-                                ></div>
-                              </div>
-                              <span className="text-sm text-green-600 font-medium mt-1 block">40% Complete</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Live Stats */}
-                    <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-4 border border-blue-100">
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="text-center">
-                          <div className="text-2xl font-bold text-blue-600 mb-1">12</div>
-                          <div className="text-sm text-gray-600">Courses Completed</div>
-                        </div>
-                        <div className="text-center">
-                          <div className="text-2xl font-bold text-cyan-600 mb-1">120h</div>
-                          <div className="text-sm text-gray-600">Learning Time</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Achievement Badge */}
-                    <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-4 border border-yellow-100">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center">
-                          🏆
-                        </div>
-                        <div>
-                          <div className="font-semibold text-gray-800">Top Performer</div>
-                          <div className="text-sm text-gray-600">Earned this week</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Floating Elements */}
-                <div className="absolute -top-4 -right-4 bg-white rounded-full p-3 shadow-lg animate-bounce">
-                  <BookOpen className="w-6 h-6 text-blue-600" />
-                </div>
-                <div className="absolute -bottom-4 -left-4 bg-white rounded-full p-3 shadow-lg animate-pulse">
-                  <Trophy className="w-6 h-6 text-yellow-600" />
                 </div>
               </div>
             </div>
