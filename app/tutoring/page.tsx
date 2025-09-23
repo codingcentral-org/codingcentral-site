@@ -141,32 +141,7 @@ export default function TutoringPage() {
     }
   ];
 
-  const testimonials = [
-    {
-      name: 'Alex Chen',
-      role: 'Computer Science Student',
-      university: 'Stanford University',
-      content: 'The tutoring program helped me understand complex algorithms and land my dream internship at Google!',
-      rating: 5,
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      name: 'Maria Rodriguez',
-      role: 'Bootcamp Graduate',
-      university: 'General Assembly',
-      content: 'My mentor guided me through React and helped me build an amazing portfolio. I got hired within 2 months!',
-      rating: 5,
-      image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      name: 'David Kim',
-      role: 'High School Student',
-      university: 'Lincoln High School',
-      content: 'Started with zero coding knowledge. Now I\'m building my own apps and planning to study CS in college!',
-      rating: 5,
-      image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400'
-    }
-  ];
+
 
   const stats = [
     { number: '2,000+', label: 'Students Mentored', icon: Users },
@@ -448,53 +423,6 @@ export default function TutoringPage() {
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-16 bg-white/50 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Success Stories
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Hear from students who transformed their coding skills with our tutoring program
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-0 bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
-                <CardHeader className="text-center pb-4">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-16 h-16 rounded-full mx-auto mb-4 object-cover"
-                  />
-                  <div className="flex justify-center mb-2">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <CardTitle className="text-lg font-bold text-gray-900">
-                    {testimonial.name}
-                  </CardTitle>
-                  <CardDescription className="text-green-600 font-medium">
-                    {testimonial.role}
-                  </CardDescription>
-                  <CardDescription className="text-gray-500 text-sm">
-                    {testimonial.university}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-gray-600 italic leading-relaxed">
-                    &quot;{testimonial.content}&quot;
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>

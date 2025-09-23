@@ -285,7 +285,7 @@ export default function DashboardPage() {
                   <CardContent className="p-6">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-sm font-medium text-blue-700 mb-1">This Month's Events</p>
+                        <p className="text-sm font-medium text-blue-700 mb-1">This Month&apos;s Events</p>
                         <p className="text-3xl font-bold text-blue-900">3</p>
                         <p className="text-xs text-blue-600 mt-1">2 upcoming</p>
                       </div>
@@ -336,7 +336,7 @@ export default function DashboardPage() {
                       <div className="flex items-center justify-between">
                         <div>
                           <CardTitle className="text-xl font-bold text-gray-900">Upcoming Events</CardTitle>
-                          <CardDescription className="text-gray-600">Events you're organizing</CardDescription>
+                          <CardDescription className="text-gray-600">Events you&apos;re organizing</CardDescription>
                         </div>
                         <Button className="bg-blue-600 hover:bg-blue-700 rounded-xl px-6">
                           + New Event

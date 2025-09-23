@@ -137,45 +137,133 @@ export default function Home() {
               <div className="relative w-full max-w-lg mx-auto">
                 <div className="bg-gradient-to-br from-blue-100 to-indigo-200 rounded-2xl p-8 shadow-2xl">
                   {/* Code Editor Mockup */}
-                  <div className="bg-gray-900 rounded-lg p-4 mb-4">
-                    <div className="flex items-center space-x-2 mb-3">
-                      <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                      <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                      <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                    </div>
-                    <div className="space-y-2 text-sm font-mono">
-                      <div className="text-blue-400">function <span className="text-yellow-400">learnCoding</span>() {'{'}
+                  {/* 3D Glassmorphism Code Terminal */}
+                  <div className="relative group perspective-1000">
+                    <div className="relative bg-black/40 backdrop-blur-2xl rounded-3xl p-6 mb-6 border border-white/20 shadow-2xl transform-gpu transition-all duration-700 hover:rotateX-2 hover:rotateY-2 hover:scale-105">
+                      {/* Glassmorphism overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-blue-500/5 to-purple-500/10 rounded-3xl backdrop-blur-xl"></div>
+                      
+                      {/* Inner glow effect */}
+                      <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-400/20 via-transparent to-purple-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      
+                      {/* Terminal header */}
+                      <div className="relative flex items-center justify-between mb-4">
+                        <div className="flex items-center space-x-2">
+                          <div className="w-4 h-4 bg-red-500/80 rounded-full backdrop-blur-sm shadow-lg"></div>
+                          <div className="w-4 h-4 bg-yellow-500/80 rounded-full backdrop-blur-sm shadow-lg"></div>
+                          <div className="w-4 h-4 bg-green-500/80 rounded-full backdrop-blur-sm shadow-lg"></div>
+                        </div>
+                        <div className="text-white/60 text-xs font-mono bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
+                          terminal.js
+                        </div>
                       </div>
-                      <div className="text-gray-300 ml-4">console.log(<span className="text-green-400">&quot;Welcome to Coding Central!&quot;</span>);</div>
-                      <div className="text-gray-300 ml-4">return <span className="text-purple-400">success</span>;</div>
-                      <div className="text-blue-400">{'}'}</div>
+                      
+                      {/* 3D Code Block */}
+                      <div className="relative font-mono text-sm leading-relaxed">
+                        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl transform translate-z-4"></div>
+                        <div className="relative bg-black/30 rounded-2xl p-4 backdrop-blur-sm border border-white/10">
+                          <div className="space-y-2">
+                            <div className="text-blue-300 drop-shadow-lg">
+                              <span className="text-purple-300">function</span>{' '}
+                              <span className="text-yellow-300 font-semibold drop-shadow-sm">learnCoding</span>
+                              <span className="text-white/90">()</span>{' '}
+                              <span className="text-cyan-300">{'{'}</span>
+                            </div>
+                            <div className="text-gray-300 ml-6 drop-shadow-sm">
+                              <span className="text-blue-300">console</span>
+                              <span className="text-white/90">.</span>
+                              <span className="text-yellow-300">log</span>
+                              <span className="text-white/90">(</span>
+                              <span className="text-green-300">&quot;Welcome to Coding Central!&quot;</span>
+                              <span className="text-white/90">);</span>
+                            </div>
+                            <div className="text-gray-300 ml-6 drop-shadow-sm">
+                              <span className="text-purple-300">return</span>{' '}
+                              <span className="text-orange-300 font-semibold">success</span>
+                              <span className="text-white/90">;</span>
+                            </div>
+                            <div className="text-cyan-300 drop-shadow-lg">{'}'}</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   
-                  {/* Progress Indicators */}
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-gray-700 font-medium">JavaScript Fundamentals</span>
-                      <span className="text-blue-600 font-semibold">85%</span>
+                  {/* 3D Glassmorphism Progress Section */}
+                  <div className="space-y-6">
+                    {/* JavaScript Progress */}
+                    <div className="relative group">
+                      <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-5 border border-white/20 shadow-xl transform-gpu transition-all duration-500 hover:scale-105 hover:bg-white/15">
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-blue-600/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <div className="relative flex items-center justify-between mb-3">
+                          <span className="text-white font-semibold drop-shadow-sm">JavaScript Fundamentals</span>
+                          <span className="text-blue-300 font-bold text-lg drop-shadow-sm">85%</span>
+                        </div>
+                        
+                        <div className="relative">
+                          <div className="h-3 bg-black/30 rounded-full backdrop-blur-sm overflow-hidden border border-white/20">
+                            <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/10 rounded-full"></div>
+                            <div 
+                              className="h-full bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 rounded-full relative overflow-hidden shadow-lg transform-gpu transition-all duration-1000 ease-out"
+                              style={{width: '85%'}}
+                            >
+                              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
+                              <div className="absolute inset-0 bg-gradient-to-t from-blue-700/50 to-transparent"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full" style={{width: '85%'}}></div>
+
+                    {/* Python Progress */}
+                    <div className="relative group">
+                      <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-5 border border-white/20 shadow-xl transform-gpu transition-all duration-500 hover:scale-105 hover:bg-white/15">
+                        <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 via-transparent to-green-600/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <div className="relative flex items-center justify-between mb-3">
+                          <span className="text-white font-semibold drop-shadow-sm">Python Basics</span>
+                          <span className="text-green-300 font-bold text-lg drop-shadow-sm">92%</span>
+                        </div>
+                        
+                        <div className="relative">
+                          <div className="h-3 bg-black/30 rounded-full backdrop-blur-sm overflow-hidden border border-white/20">
+                            <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/10 rounded-full"></div>
+                            <div 
+                              className="h-full bg-gradient-to-r from-green-400 via-green-500 to-emerald-600 rounded-full relative overflow-hidden shadow-lg transform-gpu transition-all duration-1000 ease-out"
+                              style={{width: '92%'}}
+                            >
+                              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
+                              <div className="absolute inset-0 bg-gradient-to-t from-green-700/50 to-transparent"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-gray-700 font-medium">Python Basics</span>
-                      <span className="text-green-600 font-semibold">92%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div className="bg-gradient-to-r from-green-500 to-green-600 h-2 rounded-full" style={{width: '92%'}}></div>
-                    </div>
-                    
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-gray-700 font-medium">Web Development</span>
-                      <span className="text-purple-600 font-semibold">67%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div className="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full" style={{width: '67%'}}></div>
+
+                    {/* Web Development Progress */}
+                    <div className="relative group">
+                      <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-5 border border-white/20 shadow-xl transform-gpu transition-all duration-500 hover:scale-105 hover:bg-white/15">
+                        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-purple-600/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <div className="relative flex items-center justify-between mb-3">
+                          <span className="text-white font-semibold drop-shadow-sm">Web Development</span>
+                          <span className="text-purple-300 font-bold text-lg drop-shadow-sm">67%</span>
+                        </div>
+                        
+                        <div className="relative">
+                          <div className="h-3 bg-black/30 rounded-full backdrop-blur-sm overflow-hidden border border-white/20">
+                            <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/10 rounded-full"></div>
+                            <div 
+                              className="h-full bg-gradient-to-r from-purple-400 via-purple-500 to-violet-600 rounded-full relative overflow-hidden shadow-lg transform-gpu transition-all duration-1000 ease-out"
+                              style={{width: '67%'}}
+                            >
+                              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
+                              <div className="absolute inset-0 bg-gradient-to-t from-purple-700/50 to-transparent"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
