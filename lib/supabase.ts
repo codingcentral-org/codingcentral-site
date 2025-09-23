@@ -5,7 +5,9 @@ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholde
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   auth: {
-    persistSession: false // Disable auth persistence for demo mode
+    persistSession: true, // Enable auth persistence for production
+    autoRefreshToken: true,
+    detectSessionInUrl: true
   }
 });
 
