@@ -146,7 +146,7 @@ export default function Home() {
                     <div className="space-y-2 text-sm font-mono">
                       <div className="text-blue-400">function <span className="text-yellow-400">learnCoding</span>() {'{'}
                       </div>
-                      <div className="text-gray-300 ml-4">console.log(<span className="text-green-400">"Welcome to Coding Central!"</span>);</div>
+                      <div className="text-gray-300 ml-4">console.log(<span className="text-green-400">&quot;Welcome to Coding Central!&quot;</span>);</div>
                       <div className="text-gray-300 ml-4">return <span className="text-purple-400">success</span>;</div>
                       <div className="text-blue-400">{'}'}</div>
                     </div>

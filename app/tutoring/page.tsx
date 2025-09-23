@@ -197,7 +197,7 @@ export default function TutoringPage() {
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               Connect with expert mentors who will guide you through your coding journey. 
-              From beginner concepts to advanced topics, we're here to help you succeed.
+              From beginner concepts to advanced topics, we&apos;re here to help you succeed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
@@ -257,7 +257,7 @@ export default function TutoringPage() {
                 Request a Tutor
               </CardTitle>
               <CardDescription className="text-lg text-gray-600">
-                Tell us about your learning goals and we'll match you with the perfect mentor
+                Tell us about your learning goals and we&apos;ll match you with the perfect mentor
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -490,7 +490,7 @@ export default function TutoringPage() {
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-gray-600 italic leading-relaxed">
-                    "{testimonial.content}"
+                    &quot;{testimonial.content}&quot;
                   </p>
                 </CardContent>
               </Card>

@@ -174,7 +174,7 @@ export default function ChaptersPage() {
 
       {/* Call to Action */}
       <div className="text-center mt-12 space-y-4">
-        <h2 className="text-xl font-bold">Don't See Your School?</h2>
+        <h2 className="text-xl font-bold">Don&apos;t See Your School?</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
           Starting a chapter is easier than you think! We provide all the resources, 
           training, and support you need to bring Coding Central to your campus.

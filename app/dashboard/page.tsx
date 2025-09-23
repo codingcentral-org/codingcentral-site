@@ -245,7 +245,7 @@ export default function DashboardPage() {
                       <span className="font-medium">45</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>This Month's Events</span>
+                      <span>This Month&apos;s Events</span>
                       <span className="font-medium">3</span>
                     </div>
                     <div className="flex justify-between">
@@ -259,7 +259,7 @@ export default function DashboardPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">Upcoming Events</CardTitle>
-                  <CardDescription>Events you're organizing</CardDescription>
+                  <CardDescription>Events you&apos;re organizing</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
