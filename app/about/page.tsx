@@ -207,10 +207,6 @@ export default function AboutPage() {
                 width={800}
                 height={533}
               />
-              <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-blue-500 to-purple-600 text-white p-6 rounded-xl shadow-xl">
-                <div className="text-2xl font-bold">5,000+</div>
-                <div className="text-sm opacity-90">Lives Changed</div>
-              </div>
             </div>
           </div>
         </div>
