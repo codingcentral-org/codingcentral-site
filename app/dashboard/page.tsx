@@ -235,65 +235,249 @@ export default function DashboardPage() {
 
           {/* Chapter Lead Dashboard */}
           {user.role === 'chapter_lead' && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Chapter Stats</CardTitle>
-                  <CardDescription>Your chapter&apos;s current status</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span>Active Members</span>
-                      <span className="font-medium">45</span>
+            <div className="space-y-8">
+              {/* Header Section */}
+              <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-500 via-blue-600 to-indigo-700 p-8 text-white">
+                <div className="absolute inset-0 bg-black/10"></div>
+                <div className="absolute -top-24 -right-24 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
+                <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
+                <div className="relative">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm">
+                      <span className="text-xl font-bold">CC</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span>This Month&apos;s Events</span>
-                      <span className="font-medium">3</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Attendance Rate</span>
-                      <span className="font-medium">78%</span>
+                    <div>
+                      <h1 className="text-2xl font-bold">UTD Coding Central</h1>
+                      <p className="text-blue-100">Chapter Leadership Dashboard</p>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Upcoming Events</CardTitle>
-                  <CardDescription>Events you&apos;re organizing</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="text-sm">
-                      <p className="font-medium">Algorithm Workshop</p>
-                      <p className="text-muted-foreground">February 25, 2025</p>
+                  <div className="flex items-center space-x-6 text-sm">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                      <span>Active Chapter</span>
                     </div>
-                    <Button size="sm" variant="outline" className="w-full">
-                      Manage Events
-                    </Button>
+                    <div className="flex items-center space-x-2">
+                      <span>•</span>
+                      <span>University of Texas at Dallas</span>
+                    </div>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
 
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Chapter Management</CardTitle>
-                  <CardDescription>Quick actions for your chapter</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <Button size="sm" variant="outline" className="w-full">
-                    Edit Chapter Info
-                  </Button>
-                  <Button size="sm" variant="outline" className="w-full">
-                    View Members
-                  </Button>
-                  <Button size="sm" variant="outline" className="w-full">
-                    Schedule Event
-                  </Button>
-                </CardContent>
-              </Card>
+              {/* Quick Stats Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <Card className="border-0 shadow-lg bg-gradient-to-br from-emerald-50 to-emerald-100/50 border-emerald-200/50">
+                  <CardContent className="p-6">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-sm font-medium text-emerald-700 mb-1">Active Members</p>
+                        <p className="text-3xl font-bold text-emerald-900">45</p>
+                        <p className="text-xs text-emerald-600 mt-1">+5 this month</p>
+                      </div>
+                      <div className="w-12 h-12 bg-emerald-500 rounded-2xl flex items-center justify-center">
+                        <span className="text-white text-xl">👥</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-0 shadow-lg bg-gradient-to-br from-blue-50 to-blue-100/50 border-blue-200/50">
+                  <CardContent className="p-6">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-sm font-medium text-blue-700 mb-1">This Month's Events</p>
+                        <p className="text-3xl font-bold text-blue-900">3</p>
+                        <p className="text-xs text-blue-600 mt-1">2 upcoming</p>
+                      </div>
+                      <div className="w-12 h-12 bg-blue-500 rounded-2xl flex items-center justify-center">
+                        <span className="text-white text-xl">📅</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-0 shadow-lg bg-gradient-to-br from-purple-50 to-purple-100/50 border-purple-200/50">
+                  <CardContent className="p-6">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-sm font-medium text-purple-700 mb-1">Attendance Rate</p>
+                        <p className="text-3xl font-bold text-purple-900">78%</p>
+                        <p className="text-xs text-purple-600 mt-1">Above average</p>
+                      </div>
+                      <div className="w-12 h-12 bg-purple-500 rounded-2xl flex items-center justify-center">
+                        <span className="text-white text-xl">📊</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-0 shadow-lg bg-gradient-to-br from-amber-50 to-amber-100/50 border-amber-200/50">
+                  <CardContent className="p-6">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-sm font-medium text-amber-700 mb-1">Pending Requests</p>
+                        <p className="text-3xl font-bold text-amber-900">7</p>
+                        <p className="text-xs text-amber-600 mt-1">Needs review</p>
+                      </div>
+                      <div className="w-12 h-12 bg-amber-500 rounded-2xl flex items-center justify-center">
+                        <span className="text-white text-xl">⏳</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Main Content Grid */}
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                {/* Upcoming Events */}
+                <div className="lg:col-span-2">
+                  <Card className="border-0 shadow-xl">
+                    <CardHeader className="pb-4">
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <CardTitle className="text-xl font-bold text-gray-900">Upcoming Events</CardTitle>
+                          <CardDescription className="text-gray-600">Events you're organizing</CardDescription>
+                        </div>
+                        <Button className="bg-blue-600 hover:bg-blue-700 rounded-xl px-6">
+                          + New Event
+                        </Button>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <div className="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl border border-blue-100">
+                        <div className="flex items-center justify-between mb-4">
+                          <div className="flex items-center space-x-4">
+                            <div className="w-12 h-12 bg-blue-500 rounded-2xl flex items-center justify-center">
+                              <span className="text-white text-lg">🧮</span>
+                            </div>
+                            <div>
+                              <h3 className="font-semibold text-gray-900">Algorithm Workshop</h3>
+                              <p className="text-sm text-gray-600">Interactive coding session</p>
+                            </div>
+                          </div>
+                          <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">Upcoming</Badge>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-4 text-sm text-gray-600">
+                            <span>📅 Feb 25, 2025</span>
+                            <span>⏰ 6:00 PM</span>
+                            <span>📍 ECSS 2.306</span>
+                          </div>
+                          <Button variant="outline" size="sm" className="rounded-lg">
+                            Manage
+                          </Button>
+                        </div>
+                      </div>
+                      
+                      <div className="p-6 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl border border-emerald-100">
+                        <div className="flex items-center justify-between mb-4">
+                          <div className="flex items-center space-x-4">
+                            <div className="w-12 h-12 bg-emerald-500 rounded-2xl flex items-center justify-center">
+                              <span className="text-white text-lg">💼</span>
+                            </div>
+                            <div>
+                              <h3 className="font-semibold text-gray-900">Career Fair Prep</h3>
+                              <p className="text-sm text-gray-600">Resume review & mock interviews</p>
+                            </div>
+                          </div>
+                          <Badge className="bg-emerald-100 text-emerald-700 hover:bg-emerald-100">Upcoming</Badge>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-4 text-sm text-gray-600">
+                            <span>📅 Mar 5, 2025</span>
+                            <span>⏰ 5:30 PM</span>
+                            <span>📍 SU Ballroom</span>
+                          </div>
+                          <Button variant="outline" size="sm" className="rounded-lg">
+                            Manage
+                          </Button>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                {/* Quick Actions */}
+                <div className="space-y-6">
+                  <Card className="border-0 shadow-xl">
+                    <CardHeader>
+                      <CardTitle className="text-xl font-bold text-gray-900">Quick Actions</CardTitle>
+                      <CardDescription>Manage your chapter efficiently</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-3">
+                      <Button className="w-full justify-start h-14 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 rounded-xl shadow-lg">
+                        <span className="mr-3 text-lg">📝</span>
+                        <div className="text-left">
+                          <div className="font-medium">Schedule Event</div>
+                          <div className="text-xs text-blue-100">Create new chapter event</div>
+                        </div>
+                      </Button>
+                      
+                      <Button variant="outline" className="w-full justify-start h-14 border-2 hover:bg-gray-50 rounded-xl">
+                        <span className="mr-3 text-lg">👥</span>
+                        <div className="text-left">
+                          <div className="font-medium">View Members</div>
+                          <div className="text-xs text-gray-500">Manage chapter roster</div>
+                        </div>
+                      </Button>
+                      
+                      <Button variant="outline" className="w-full justify-start h-14 border-2 hover:bg-gray-50 rounded-xl">
+                        <span className="mr-3 text-lg">⚙️</span>
+                        <div className="text-left">
+                          <div className="font-medium">Chapter Settings</div>
+                          <div className="text-xs text-gray-500">Edit chapter information</div>
+                        </div>
+                      </Button>
+                      
+                      <Button variant="outline" className="w-full justify-start h-14 border-2 hover:bg-gray-50 rounded-xl">
+                        <span className="mr-3 text-lg">📊</span>
+                        <div className="text-left">
+                          <div className="font-medium">Analytics</div>
+                          <div className="text-xs text-gray-500">View detailed reports</div>
+                        </div>
+                      </Button>
+                    </CardContent>
+                  </Card>
+
+                  {/* Recent Activity */}
+                  <Card className="border-0 shadow-xl">
+                    <CardHeader>
+                      <CardTitle className="text-lg font-bold text-gray-900">Recent Activity</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <div className="flex items-center space-x-3 text-sm">
+                        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                          <span className="text-green-600 text-xs">✓</span>
+                        </div>
+                        <div>
+                          <p className="font-medium">New member joined</p>
+                          <p className="text-gray-500 text-xs">2 hours ago</p>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-center space-x-3 text-sm">
+                        <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                          <span className="text-blue-600 text-xs">📅</span>
+                        </div>
+                        <div>
+                          <p className="font-medium">Event created</p>
+                          <p className="text-gray-500 text-xs">1 day ago</p>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-center space-x-3 text-sm">
+                        <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                          <span className="text-purple-600 text-xs">🎯</span>
+                        </div>
+                        <div>
+                          <p className="font-medium">Goal achieved</p>
+                          <p className="text-gray-500 text-xs">3 days ago</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
             </div>
           )}
         </TabsContent>

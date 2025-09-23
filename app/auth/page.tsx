@@ -247,9 +247,15 @@ export default function AuthPage() {
                           <SelectContent>
                             <SelectItem value="student">Student</SelectItem>
                             <SelectItem value="tutor">Tutor</SelectItem>
-                            <SelectItem value="chapter_lead">Chapter Lead</SelectItem>
+                            <SelectItem value="chapter_lead">Chapter Lead (Pre-authorization required)</SelectItem>
                           </SelectContent>
                         </Select>
+                        {signUpData.role === 'chapter_lead' && (
+                          <div className="text-sm text-amber-600 bg-amber-50 p-3 rounded-lg border border-amber-200">
+                            <strong>Note:</strong> Chapter Lead role requires pre-authorization. If your email isn't pre-approved, 
+                            you'll be registered as a Student and can request lead privileges later.
+                          </div>
+                        )}
                       </div>
                       <Button 
                         type="submit" 
