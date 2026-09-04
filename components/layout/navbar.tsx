@@ -87,7 +87,7 @@ export function Navbar() {
               href="/learn"
               className="hidden h-9 items-center rounded-full bg-neutral-950 px-4 text-[13px] font-medium tracking-[-0.01em] text-white transition hover:bg-neutral-800 md:inline-flex"
             >
-              Browse articles
+              Explore
             </Link>
             <button
               type="button"
@@ -128,7 +128,7 @@ export function Navbar() {
                 className="mt-1 rounded-xl bg-neutral-950 px-3 py-2.5 text-center text-sm font-medium text-white"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Browse articles
+                Explore
               </Link>
             </div>
           </div>
