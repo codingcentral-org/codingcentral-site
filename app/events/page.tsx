@@ -31,20 +31,36 @@ export default function EventsPage() {
 
       <section className="section-space">
         <div className="site-container">
-          <div className="surface flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
-            <div>
-              <p className="eyebrow mb-2">Current schedule</p>
-              <h2 className="text-2xl font-semibold tracking-[-0.03em] text-neutral-950">
-                New dates are being organized.
-              </h2>
-              <p className="mt-2 max-w-2xl text-sm leading-6 text-neutral-600">
-                School announcements and approved club channels remain the source of truth for schedule changes.
-              </p>
-            </div>
-            <span className="inline-flex w-fit rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-1.5 text-xs font-semibold text-neutral-600">
-              Update pending
-            </span>
+          <div className="mb-6">
+            <p className="eyebrow mb-2">Current schedule</p>
+            <h2 className="section-title text-[2rem] sm:text-[2.4rem]">Upcoming</h2>
           </div>
+
+          <article className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8">
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+              <div className="max-w-2xl">
+                <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-400">
+                  Club meeting
+                </p>
+                <h3 className="mt-3 font-display text-2xl tracking-[-0.02em] text-neutral-950 sm:text-[1.75rem]">
+                  North Garland H.S. Chapter General Meeting
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-neutral-600">
+                  Join the chapter for updates, planning, and more information. School announcements
+                  and approved club channels remain the source of truth for schedule changes.
+                </p>
+              </div>
+              <div className="shrink-0 rounded-xl border border-neutral-200 bg-[#f7f7f4] px-4 py-3 sm:min-w-[180px]">
+                <p className="text-[11px] font-medium uppercase tracking-[0.12em] text-neutral-400">
+                  When
+                </p>
+                <p className="mt-2 text-[15px] font-semibold tracking-[-0.01em] text-neutral-950">
+                  September 17, 2026
+                </p>
+                <p className="mt-1 text-sm text-neutral-600">3:00 PM CT</p>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
