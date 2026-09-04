@@ -8,7 +8,7 @@ import {
 export const metadata: Metadata = {
   title: 'How Recommendation Algorithms Work',
   description:
-    'How recommendation algorithms sort endless options into relevant suggestions, by Bisrat Andrew of the North Garland H.S. Chapter.',
+    'How recommendation algorithms sort endless options into relevant suggestions, by Bisrat Ayalew of the North Garland H.S. Chapter.',
 };
 
 export default function HowRecommendationAlgorithmsWorkPage() {

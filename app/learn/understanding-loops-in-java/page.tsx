@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: 'Understanding Loops in Java',
   description:
-    'A beginner guide to Java loops and a number-guessing mini project by Bisrat Andrew of the North Garland H.S. Chapter.',
+    'A beginner guide to Java loops and a number-guessing mini project by Bisrat Ayalew of the North Garland H.S. Chapter.',
 };
 
 export default function UnderstandingLoopsInJavaPage() {
