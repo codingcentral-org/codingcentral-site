@@ -36,7 +36,7 @@ export function GuideHeader({ guide }: GuideHeaderProps) {
               <p className="text-[15px] font-semibold tracking-[-0.01em] text-neutral-950">
                 By {guide.author}
               </p>
-              <p className="mt-1 text-sm text-neutral-500">{guide.chapter}</p>
+              <p className="mt-1 text-sm text-neutral-500">{guide.role}</p>
             </div>
           </div>
         </div>

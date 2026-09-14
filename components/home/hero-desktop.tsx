@@ -178,7 +178,9 @@ function LibraryWindow() {
           <p className="mt-1.5 line-clamp-2 text-[13px] leading-5 text-neutral-600">
             {featured.description}
           </p>
-          <p className="mt-2 text-[12px] text-neutral-500">By {featured.author}</p>
+          <p className="mt-2 text-[12px] text-neutral-500">
+            {featured.author}, {featured.role}
+          </p>
         </Link>
 
         <div className="flex flex-col p-3.5 sm:p-4">
@@ -205,8 +207,8 @@ function LibraryWindow() {
                     </p>
                     <p className="mt-0.5 truncate text-[12px] text-neutral-500">
                       {item.author}
-                      <span className="text-neutral-400"> in </span>
-                      {item.topic}
+                      <span className="text-neutral-400">, </span>
+                      {item.role}
                     </p>
                   </div>
                   <ArrowRight className="h-3.5 w-3.5 shrink-0 text-neutral-300 transition group-hover:translate-x-0.5 group-hover:text-neutral-950" />

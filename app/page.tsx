@@ -7,12 +7,12 @@ import { articles } from '@/lib/guides';
 const pillars = [
   {
     title: 'Articles',
-    description: 'Clear writing that helps people learn computer science and AI faster.',
+    description: 'Professional writing across AI, systems, security, product, and emerging tech.',
     href: '/learn',
   },
   {
     title: 'Mentorship',
-    description: 'Connect industry mentors with students building careers in computer science.',
+    description: 'Connect industry mentors with people building careers in computer science.',
     href: '/tutoring',
   },
   {
@@ -106,7 +106,7 @@ export default function Home() {
         <div className="site-container">
           <div className="max-w-2xl">
             <p className="eyebrow mb-3">Mentorship</p>
-            <h2 className="section-title">Industry experience, student ambition</h2>
+            <h2 className="section-title">Industry experience, rising talent</h2>
             <p className="mt-4 text-base leading-7 text-neutral-600">
               Connect with mentors who can guide careers in computer science, AI, and emerging tech.
             </p>

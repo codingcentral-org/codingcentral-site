@@ -1,10 +1,10 @@
 # Coding Central Website
 
-The public website for Coding Central, a student-led computer science community at North Garland High School.
+The public website for Coding Central, a professional platform for AI, computer science, and emerging technologies.
 
 ## Purpose
 
-The site introduces the club, shares curated learning resources, and provides updates about meetings, workshops, mentorship, and project activities.
+The site publishes categorized technical articles, shares mentorship and research pathways, and lists workshops and community events.
 
 ## Local development
 
@@ -28,4 +28,3 @@ npm run lint
 - Next.js 13 App Router
 - React and TypeScript
 - Tailwind CSS
-- Lucide icons

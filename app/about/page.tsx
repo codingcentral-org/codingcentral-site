@@ -4,16 +4,16 @@ import { ArrowRight } from 'lucide-react';
 
 const principles = [
   {
-    title: 'Brightest minds first',
-    description: 'We elevate ambitious students who want to lead in AI and emerging technology.',
+    title: 'Clarity over noise',
+    description: 'We publish writing that helps practitioners make better technical decisions.',
   },
   {
     title: 'Learn by building',
-    description: 'Ideas get sharper through prototypes, writing, feedback, and iteration.',
+    description: 'Ideas get sharper through prototypes, feedback, and iteration in real systems.',
   },
   {
     title: 'Connect to industry',
-    description: 'Mentorship bridges students pursuing CS careers with people already doing the work.',
+    description: 'Mentorship links ambitious builders with people already shipping in the field.',
   },
   {
     title: 'Publish what matters',
@@ -27,7 +27,7 @@ export default function AboutPage() {
       <PageIntro
         eyebrow="About"
         title="A next-gen platform for AI and emerging tech"
-        description="Coding Central is a platform for people exploring computer science, artificial intelligence, and the technologies shaping what comes next."
+        description="Coding Central is a professional platform for computer science, artificial intelligence, and the technologies shaping what comes next."
       />
 
       <section className="section-space">
@@ -35,18 +35,17 @@ export default function AboutPage() {
           <div>
             <p className="eyebrow mb-2">Why we exist</p>
             <h2 className="section-title text-[2rem] sm:text-[2.4rem]">
-              From curiosity to career and innovation
+              From curiosity to craft and innovation
             </h2>
           </div>
           <div className="space-y-4 text-sm leading-7 text-neutral-600 sm:text-base">
             <p>
-              Coding Central brings together student writers, builders, and researchers with
-              industry mentors who can open doors. Articles make hard ideas clear. Research
-              pushes toward innovation. Mentorship connects ambition to experience.
+              Coding Central publishes clear technical writing, connects builders with industry
+              mentors, and creates space for research in AI and emerging technology.
             </p>
             <p>
-              Club activities are coordinated through school-approved channels, while the
-              platform itself is built for a next generation of talent in AI and emerging tech.
+              The library is organized by category so readers can move quickly from fundamentals
+              to systems, security, product, and frontier topics.
             </p>
           </div>
         </div>

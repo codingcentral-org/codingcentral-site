@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowUpRight } from 'lucide-react';
 import { PageIntro } from '@/components/layout/page-intro';
-import { articles } from '@/lib/guides';
+import { ArrowUpRight } from 'lucide-react';
+import { articleTopics, articles } from '@/lib/guides';
 
 const externalResources = [
   {
@@ -30,9 +30,27 @@ export default function LearnPage() {
     <>
       <PageIntro
         eyebrow="Articles"
-        title="Clear writing for curious minds"
-        description="Practical explainers and essays from Coding Central on computer science, AI, and emerging tech."
+        title="Professional writing across categories"
+        description="Practical explainers on AI, systems, security, product, and emerging technology from practitioners."
       />
+
+      <section className="border-b border-neutral-200 bg-white">
+        <div className="site-container py-5">
+          <div className="flex flex-wrap gap-2">
+            <span className="rounded-full bg-neutral-950 px-3 py-1.5 text-[12px] font-medium text-white">
+              All
+            </span>
+            {articleTopics.map((topic) => (
+              <span
+                key={topic}
+                className="rounded-full border border-neutral-200 bg-[#f7f7f4] px-3 py-1.5 text-[12px] font-medium text-neutral-600"
+              >
+                {topic}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="section-space">
         <div className="site-container max-w-4xl">
@@ -58,7 +76,11 @@ export default function LearnPage() {
                 <p className="mt-2 text-sm leading-6 text-neutral-600 line-clamp-2">
                   {article.description}
                 </p>
-                <p className="mt-3 text-sm text-neutral-500">By {article.author}</p>
+                <p className="mt-3 text-sm text-neutral-500">
+                  {article.author}
+                  <span className="text-neutral-400">, </span>
+                  {article.role}
+                </p>
               </Link>
             ))}
           </div>

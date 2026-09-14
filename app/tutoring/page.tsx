@@ -3,9 +3,9 @@ import { ArrowUpRight } from 'lucide-react';
 
 const steps = [
   {
-    title: 'Students with ambition',
+    title: 'Builders with ambition',
     description:
-      'Learners preparing for careers in computer science, AI, and emerging technology who want real-world guidance.',
+      'People preparing for careers in computer science, AI, and emerging technology who want real-world guidance.',
   },
   {
     title: 'Industry mentors',
@@ -15,7 +15,7 @@ const steps = [
   {
     title: 'Clear connections',
     description:
-      'Structured introductions that help students ask better questions and mentors give useful, actionable feedback.',
+      'Structured introductions that help mentees ask better questions and mentors give useful, actionable feedback.',
   },
 ];
 
@@ -24,8 +24,8 @@ export default function MentorshipPage() {
     <>
       <PageIntro
         eyebrow="Mentorship"
-        title="Connect industry mentors to students"
-        description="Coding Central links students pursuing computer science careers with mentors who work in the field, so ambition meets experience."
+        title="Connect industry mentors to rising talent"
+        description="Coding Central links people pursuing computer science careers with mentors who work in the field, so ambition meets experience."
       />
 
       <section className="section-space">
@@ -33,7 +33,7 @@ export default function MentorshipPage() {
           <div className="mb-8 max-w-2xl">
             <p className="eyebrow mb-2">How it works</p>
             <h2 className="section-title text-[2rem] sm:text-[2.4rem]">
-              Career-minded students. Mentors who ship.
+              Career-minded talent. Mentors who ship.
             </h2>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
@@ -53,49 +53,33 @@ export default function MentorshipPage() {
       </section>
 
       <section className="border-t border-neutral-200 bg-white section-space">
-        <div className="site-container grid gap-10 lg:grid-cols-2 lg:items-start">
+        <div className="site-container grid gap-10 lg:grid-cols-2">
           <div>
-            <p className="eyebrow mb-2">For students</p>
-            <h2 className="section-title text-[1.75rem] sm:text-[2.1rem]">
-              Get advice for the path ahead
-            </h2>
-            <p className="mt-4 text-sm leading-7 text-neutral-600 sm:text-base">
-              Whether you are exploring AI, software engineering, research, or product,
-              mentorship helps you understand what to learn next and how professionals
-              actually grow in the field.
+            <p className="eyebrow mb-2">For mentees</p>
+            <h2 className="section-title text-[2rem] sm:text-[2.4rem]">Ask better questions</h2>
+            <p className="mt-4 text-sm leading-7 text-neutral-600">
+              Bring a concrete goal: a portfolio review, interview prep, or feedback on a technical
+              direction. Mentors help most when the ask is specific.
             </p>
           </div>
           <div>
             <p className="eyebrow mb-2">For mentors</p>
-            <h2 className="section-title text-[1.75rem] sm:text-[2.1rem]">
-              Invest in the next generation
-            </h2>
-            <p className="mt-4 text-sm leading-7 text-neutral-600 sm:text-base">
-              Share what you wish someone had told you earlier. Help sharp students turn
-              curiosity into a career plan grounded in real industry practice.
+            <h2 className="section-title text-[2rem] sm:text-[2.4rem]">Share what compounds</h2>
+            <p className="mt-4 text-sm leading-7 text-neutral-600">
+              Share what you wish someone had told you earlier. Help sharp builders turn curiosity
+              into durable skill.
             </p>
           </div>
         </div>
-      </section>
 
-      <section className="border-t border-neutral-200 section-space">
-        <div className="site-container flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-          <div className="max-w-2xl">
-            <p className="eyebrow mb-2">Get involved</p>
-            <h2 className="section-title text-[2rem] sm:text-[2.4rem]">
-              Interested in mentorship?
-            </h2>
-            <p className="mt-3 text-sm leading-6 text-neutral-600">
-              Reach out if you are a student seeking guidance or a professional ready to mentor.
-            </p>
-          </div>
-          <a
-            href="mailto:events@codingcentral.org?subject=Coding%20Central%20mentorship"
-            className="btn-primary rounded-full"
-          >
+        <div className="site-container mt-12">
+          <a href="mailto:mentorship@codingcentral.org" className="btn-primary rounded-full">
             Contact mentorship
             <ArrowUpRight className="h-4 w-4" />
           </a>
+          <p className="mt-4 max-w-xl text-sm text-neutral-500">
+            Reach out if you are seeking guidance or a professional ready to mentor.
+          </p>
         </div>
       </section>
     </>

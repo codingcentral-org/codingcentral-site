@@ -12,8 +12,8 @@ const focus = [
     description: 'Investigate new tools, platforms, and ideas shaping how software gets built.',
   },
   {
-    title: 'Student innovation',
-    description: 'Publish findings, prototypes, and questions from builders exploring AI and emerging tech.',
+    title: 'Applied innovation',
+    description: 'Publish findings, prototypes, and questions from teams exploring the frontier.',
   },
 ];
 
@@ -23,7 +23,7 @@ export default function ResearchPage() {
       <PageIntro
         eyebrow="Research"
         title="Innovation, coming soon"
-        description="Research at Coding Central is for breakthroughs in AI, emerging technologies, and original student innovation."
+        description="Research at Coding Central is for breakthroughs in AI, emerging technologies, and applied technical innovation."
       />
 
       <section className="section-space">
@@ -34,9 +34,8 @@ export default function ResearchPage() {
               A home for serious exploration
             </h2>
             <p className="mt-4 text-base leading-7 text-neutral-600">
-              We are building a research space where students publish experiments, papers,
-              and prototypes at the frontier, not just tutorials. Until it launches, keep
-              reading current student writing in Articles.
+              We are building a research space for experiments, papers, and prototypes at the
+              frontier. Until it launches, explore current professional writing in Articles.
             </p>
           </div>
 
@@ -54,18 +53,13 @@ export default function ResearchPage() {
             ))}
           </div>
 
-          <div className="mt-12 flex flex-col gap-3 sm:flex-row">
-            <Link href="/learn" className="btn-primary rounded-full">
-              Browse articles
-              <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
-            <a
-              href="mailto:events@codingcentral.org?subject=Coding%20Central%20research"
-              className="btn-secondary rounded-full"
-            >
-              Share a research idea
-            </a>
-          </div>
+          <Link
+            href="/learn"
+            className="mt-12 inline-flex min-h-[44px] items-center gap-2 rounded-full bg-neutral-950 px-5 text-sm font-medium text-white transition hover:bg-neutral-800"
+          >
+            Browse articles
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          </Link>
         </div>
       </section>
     </>

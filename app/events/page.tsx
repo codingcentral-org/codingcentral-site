@@ -3,20 +3,20 @@ import { ArrowUpRight } from 'lucide-react';
 
 const formats = [
   {
-    title: 'Build sessions',
-    description: 'Focused time to work on projects, compare approaches, and debug together.',
+    title: 'Workshops',
+    description: 'Focused sessions on AI, systems, security, and practical engineering craft.',
   },
   {
-    title: 'Skill workshops',
-    description: 'Hands-on introductions to tools and topics students want to understand better.',
+    title: 'Talks',
+    description: 'Practitioners share how they design, ship, and operate real products.',
   },
   {
-    title: 'Project shares',
-    description: 'Low-pressure opportunities to explain a work in progress and receive useful feedback.',
+    title: 'Office hours',
+    description: 'Open time for questions on career paths, architecture, and technical decisions.',
   },
   {
-    title: 'Club meetings',
-    description: 'Plan upcoming activities, meet other members, and find a project partner.',
+    title: 'Community meetups',
+    description: 'Lightweight gatherings to compare approaches and meet collaborators.',
   },
 ];
 
@@ -24,9 +24,9 @@ export default function EventsPage() {
   return (
     <>
       <PageIntro
-        eyebrow="Meet, learn, build"
-        title="Club events, clearly listed."
-        description="Meetings, workshops, and project sessions coordinated through school-approved channels. Confirmed dates appear here when available."
+        eyebrow="Events"
+        title="Workshops, talks, and meetups"
+        description="Coding Central hosts professional sessions on AI, engineering, and emerging technology. Confirmed dates appear here when scheduled."
       />
 
       <section className="section-space">
@@ -40,14 +40,15 @@ export default function EventsPage() {
             <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
               <div className="max-w-2xl">
                 <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-400">
-                  Club meeting
+                  Workshop
                 </p>
                 <h3 className="mt-3 font-display text-2xl tracking-[-0.02em] text-neutral-950 sm:text-[1.75rem]">
-                  North Garland H.S. Chapter General Meeting
+                  Shipping Reliable AI Features
                 </h3>
                 <p className="mt-3 text-sm leading-6 text-neutral-600">
-                  Join the chapter for updates, planning, and more information. School announcements
-                  and approved club channels remain the source of truth for schedule changes.
+                  A working session on evaluation, guardrails, and production patterns for teams
+                  adding AI to real products. Registration details are shared through Coding
+                  Central channels when enrollment opens.
                 </p>
               </div>
               <div className="shrink-0 rounded-xl border border-neutral-200 bg-[#f7f7f4] px-4 py-3 sm:min-w-[180px]">
@@ -55,9 +56,9 @@ export default function EventsPage() {
                   When
                 </p>
                 <p className="mt-2 text-[15px] font-semibold tracking-[-0.01em] text-neutral-950">
-                  September 17, 2026
+                  October 8, 2026
                 </p>
-                <p className="mt-1 text-sm text-neutral-600">3:00 PM CT</p>
+                <p className="mt-1 text-sm text-neutral-600">1:00 PM CT</p>
               </div>
             </div>
           </article>
@@ -68,15 +69,15 @@ export default function EventsPage() {
         <div className="site-container">
           <div className="mb-8 max-w-2xl">
             <p className="eyebrow mb-2">What to expect</p>
-            <h2 className="section-title text-[2rem] sm:text-[2.4rem]">Different formats. Same goal.</h2>
+            <h2 className="section-title text-[2rem] sm:text-[2.4rem]">Different formats. Same bar.</h2>
           </div>
-          <div className="grid gap-3 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-2">
             {formats.map((format, index) => (
-              <article key={format.title} className="surface p-5 sm:p-6">
+              <article key={format.title}>
                 <span className="font-mono text-[12px] font-medium text-neutral-400">
                   {String(index + 1).padStart(2, '0')}
                 </span>
-                <h3 className="mt-6 text-lg font-semibold tracking-[-0.02em] text-neutral-950">
+                <h3 className="mt-4 text-lg font-semibold tracking-[-0.02em] text-neutral-950">
                   {format.title}
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-neutral-600">{format.description}</p>
@@ -90,10 +91,10 @@ export default function EventsPage() {
         <div className="site-container text-center">
           <p className="eyebrow mb-3">Have a question?</p>
           <h2 className="section-title mx-auto max-w-2xl text-[2rem] sm:text-[2.4rem]">
-            Ask through an approved club channel.
+            Reach the events team
           </h2>
           <a href="mailto:events@codingcentral.org" className="btn-primary mt-8">
-            Email the club
+            Email events
             <ArrowUpRight className="h-4 w-4" />
           </a>
         </div>

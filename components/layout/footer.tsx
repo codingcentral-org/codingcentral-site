@@ -49,7 +49,7 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col gap-2 border-t border-neutral-200 pt-6 text-xs text-neutral-400 sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} Coding Central</p>
-          <p>Club activities are coordinated through school-approved channels.</p>
+          <p>Built for AI, computer science, and emerging technology.</p>
         </div>
       </div>
     </footer>
