@@ -30,6 +30,14 @@ export const metadata: Metadata = {
   },
   description:
     'A next-gen platform for AI and emerging technologies. Articles, mentorship, and research for what comes next.',
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
+  },
 };
 
 export default function RootLayout({
