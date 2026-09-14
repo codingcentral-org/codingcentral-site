@@ -74,10 +74,10 @@ export function HeroDesktop() {
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
-                href="/learn"
+                href="/courses"
                 className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-neutral-950 px-5 text-sm font-medium text-white transition hover:bg-neutral-800"
               >
-                Browse articles
+                Browse courses
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
               <Link
@@ -146,10 +146,10 @@ function LibraryWindow() {
         </div>
         <div className="flex min-w-0 flex-1 items-center justify-center gap-2 rounded-lg bg-white px-3 py-1 ring-1 ring-black/5">
           <img src="/codingcentral_logo.jpg" alt="" className="h-4 w-4 rounded-[3px] object-contain" />
-          <p className="truncate font-mono text-[11px] text-neutral-500">codingcentral.org/learn</p>
+          <p className="truncate font-mono text-[11px] text-neutral-500">codingcentral.org/courses</p>
         </div>
         <Link
-          href="/learn"
+          href="/courses"
           className="hidden text-[12px] font-medium text-neutral-600 transition hover:text-neutral-950 sm:inline"
         >
           View all
@@ -158,7 +158,7 @@ function LibraryWindow() {
 
       <div className="grid bg-white md:grid-cols-[1.2fr_0.9fr]">
         <Link
-          href={`/learn/${featured.slug}`}
+          href={`/courses/${featured.slug}`}
           className="group border-b border-neutral-200 p-3.5 sm:p-4 md:border-b-0 md:border-r"
         >
           <div className="overflow-hidden rounded-xl border border-black/5 bg-neutral-100">
@@ -185,17 +185,17 @@ function LibraryWindow() {
 
         <div className="flex flex-col p-3.5 sm:p-4">
           <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-400">
-            Library
+            Courses
           </p>
           <p className="mt-1 font-display text-[1.25rem] leading-none tracking-[-0.02em] text-neutral-950">
-            Fresh writing
+            Featured courses
           </p>
 
           <ul className="mt-3 flex-1 space-y-1.5">
             {more.map((item) => (
               <li key={item.slug}>
                 <Link
-                  href={`/learn/${item.slug}`}
+                  href={`/courses/${item.slug}`}
                   className="group flex items-center gap-3 rounded-xl p-1.5 transition hover:bg-neutral-50"
                 >
                   <div className="h-10 w-14 shrink-0 overflow-hidden rounded-lg border border-black/5 bg-neutral-100">
@@ -218,10 +218,10 @@ function LibraryWindow() {
           </ul>
 
           <Link
-            href="/learn"
+            href="/courses"
             className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-medium text-neutral-950 transition hover:gap-2"
           >
-            Browse the library
+            Browse courses
             <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
           </Link>
         </div>

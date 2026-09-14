@@ -17,7 +17,7 @@ const principles = [
   },
   {
     title: 'Publish what matters',
-    description: 'Articles teach. Research explores. Both should help the next builder go further.',
+    description: 'Courses teach. Research explores. Both should help the next builder go further.',
   },
 ];
 
@@ -82,8 +82,8 @@ export default function AboutPage() {
             </h2>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Link href="/learn" className="btn-primary rounded-full">
-              Articles
+            <Link href="/courses" className="btn-primary rounded-full">
+              Courses
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
             <Link href="/tutoring" className="btn-secondary rounded-full">

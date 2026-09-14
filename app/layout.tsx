@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: '%s | Coding Central',
   },
   description:
-    'A next-gen platform for AI and emerging technologies. Articles, mentorship, and research for what comes next.',
+    'A next-gen platform for AI and emerging technologies. Courses, mentorship, and research for what comes next.',
   icons: {
     icon: [
       { url: '/favicon.ico' },

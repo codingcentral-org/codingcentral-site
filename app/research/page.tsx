@@ -35,7 +35,7 @@ export default function ResearchPage() {
             </h2>
             <p className="mt-4 text-base leading-7 text-neutral-600">
               We are building a research space for experiments, papers, and prototypes at the
-              frontier. Until it launches, explore current professional writing in Articles.
+              frontier. Until it launches, explore current courses in Courses.
             </p>
           </div>
 
@@ -54,10 +54,10 @@ export default function ResearchPage() {
           </div>
 
           <Link
-            href="/learn"
+            href="/courses"
             className="mt-12 inline-flex min-h-[44px] items-center gap-2 rounded-full bg-neutral-950 px-5 text-sm font-medium text-white transition hover:bg-neutral-800"
           >
-            Browse articles
+            Browse courses
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>

@@ -7,7 +7,7 @@ import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
-  { name: 'Articles', href: '/learn' },
+  { name: 'Courses', href: '/courses' },
   { name: 'Research', href: '/research' },
   { name: 'Events', href: '/events' },
   { name: 'Mentorship', href: '/tutoring' },
@@ -84,7 +84,7 @@ export function Navbar() {
 
           <div className="flex items-center justify-self-end gap-2">
             <Link
-              href="/learn"
+              href="/courses"
               className="hidden h-9 items-center rounded-full bg-neutral-950 px-4 text-[13px] font-medium tracking-[-0.01em] text-white transition hover:bg-neutral-800 md:inline-flex"
             >
               Explore
@@ -124,7 +124,7 @@ export function Navbar() {
                 );
               })}
               <Link
-                href="/learn"
+                href="/courses"
                 className="mt-1 rounded-xl bg-neutral-950 px-3 py-2.5 text-center text-sm font-medium text-white"
                 onClick={() => setIsMenuOpen(false)}
               >

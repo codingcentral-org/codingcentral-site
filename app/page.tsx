@@ -6,9 +6,9 @@ import { articles } from '@/lib/guides';
 
 const pillars = [
   {
-    title: 'Articles',
-    description: 'Professional writing across AI, systems, security, product, and emerging tech.',
-    href: '/learn',
+    title: 'Courses',
+    description: 'Searchable courses across AI, systems, security, product, and emerging tech.',
+    href: '/courses',
   },
   {
     title: 'Mentorship',
@@ -58,11 +58,11 @@ export default function Home() {
         <div className="site-container">
           <div className="mb-10 flex items-end justify-between gap-4">
             <div>
-              <p className="eyebrow mb-3">Library</p>
-              <h2 className="section-title">Latest from the library</h2>
+              <p className="eyebrow mb-3">Courses</p>
+              <h2 className="section-title">Featured courses</h2>
             </div>
             <Link
-              href="/learn"
+              href="/courses"
               className="hidden text-sm font-medium text-neutral-950 sm:inline-flex sm:items-center sm:gap-1"
             >
               View all <ArrowRight className="h-3.5 w-3.5" />
@@ -71,7 +71,7 @@ export default function Home() {
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {featured.map((article) => (
-              <Link key={article.slug} href={`/learn/${article.slug}`} className="group block">
+              <Link key={article.slug} href={`/courses/${article.slug}`} className="group block">
                 <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-black/5 bg-neutral-100">
                   <Image
                     src={article.cover}
@@ -87,16 +87,15 @@ export default function Home() {
                 <h3 className="mt-2 font-display text-[1.35rem] leading-snug tracking-[-0.02em] text-neutral-950 group-hover:underline group-hover:decoration-neutral-300 group-hover:underline-offset-4">
                   {article.title}
                 </h3>
-                <p className="mt-2 text-sm text-neutral-500">By {article.author}</p>
               </Link>
             ))}
           </div>
 
           <Link
-            href="/learn"
+            href="/courses"
             className="mt-12 inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-neutral-950 px-5 text-sm font-medium text-white transition hover:bg-neutral-800"
           >
-            Browse articles
+            Browse courses
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>

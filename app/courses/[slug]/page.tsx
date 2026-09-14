@@ -19,7 +19,7 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: PageProps): Metadata {
   const article = getArticle(params.slug);
-  if (!article) return { title: 'Article' };
+  if (!article) return { title: 'Course' };
 
   return {
     title: article.title,
@@ -27,7 +27,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   };
 }
 
-export default function ArticleSlugPage({ params }: PageProps) {
+export default function CourseSlugPage({ params }: PageProps) {
   const article = getArticle(params.slug);
   if (!article) notFound();
 

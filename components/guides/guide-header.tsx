@@ -12,10 +12,10 @@ export function GuideHeader({ guide }: GuideHeaderProps) {
       <div className="site-container pt-10 sm:pt-12">
         <div className="mx-auto max-w-[42rem]">
           <Link
-            href="/learn"
+            href="/courses"
             className="text-[13px] font-medium text-neutral-500 transition hover:text-neutral-950"
           >
-            Back to Articles
+            Back to Courses
           </Link>
 
           <div className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-400">

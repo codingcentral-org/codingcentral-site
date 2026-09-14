@@ -24,7 +24,7 @@ export function Footer() {
               Explore
             </h2>
             <ul className="space-y-2.5 text-sm text-neutral-600">
-              <li><Link href="/learn" className="hover:text-neutral-950">Articles</Link></li>
+              <li><Link href="/courses" className="hover:text-neutral-950">Courses</Link></li>
               <li><Link href="/research" className="hover:text-neutral-950">Research</Link></li>
               <li><Link href="/events" className="hover:text-neutral-950">Events</Link></li>
               <li><Link href="/tutoring" className="hover:text-neutral-950">Mentorship</Link></li>

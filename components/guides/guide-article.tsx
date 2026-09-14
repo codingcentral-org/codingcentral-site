@@ -46,15 +46,15 @@ export function RelatedArticles({ articles }: { articles: Article[] }) {
       <div className="site-container py-16 sm:py-20">
         <div className="mx-auto max-w-4xl">
           <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-400">
-            Keep reading
+            Keep learning
           </p>
           <h2 className="mt-3 font-display text-3xl tracking-[-0.03em] text-neutral-950 sm:text-4xl">
-            More from the library
+            More courses
           </h2>
 
           <div className="mt-10 grid gap-8 sm:grid-cols-3">
             {articles.map((article) => (
-              <Link key={article.slug} href={`/learn/${article.slug}`} className="group block">
+              <Link key={article.slug} href={`/courses/${article.slug}`} className="group block">
                 <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-black/5 bg-neutral-100">
                   <Image
                     src={article.cover}
@@ -70,7 +70,6 @@ export function RelatedArticles({ articles }: { articles: Article[] }) {
                 <h3 className="mt-2 font-display text-xl leading-snug tracking-[-0.02em] text-neutral-950 group-hover:underline group-hover:decoration-neutral-300 group-hover:underline-offset-4">
                   {article.title}
                 </h3>
-                <p className="mt-2 text-sm text-neutral-500">By {article.author}</p>
               </Link>
             ))}
           </div>
